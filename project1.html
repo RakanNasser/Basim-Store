@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basim Store</title>
+    <link href="project1.css" rel="stylesheet" >
+</head>
+<body>
+    <div class="cc">
+        <h1>Basim Store</h1>
+        <div class="proname">
+        <input id="productname" type="text" placeholder="Product Name">
+        </div>
+        <form>
+            <input onkeyup="gettotal()" id="price" type="number" placeholder="Price">
+            <input onkeyup="gettotal()" id="taxes" type="number" placeholder="Taxes">
+            <input onkeyup="gettotal()" id="discount" type="number" placeholder="Discount">
+
+            <small class="totaltotal" id="total"></small>
+
+        </form>
+        <div class="proname">
+            <input id="count" type="number" placeholder="count">
+
+        </div>
+        <div class="proname">
+            <input id="category"  type="text" placeholder="category">
+        </div>
+        <div class="btnsb">
+        <button id="submit">Create</button>
+        </div>
+        <div class="proname">
+        <input onkeyup="getseardata(this.value)" id="search" type="text" placeholder="search">
+        </div>
+
+        <div class='btns'>
+            <button onclick="getsearchmood(this.id)" class="btnsearch" id="searchbytitle">Search By Proname</button>
+            <button onclick="getsearchmood(this.id)" class="btnsearch" id="searchbycategory">Search By Category</button>
+
+        </div>
+        <div class="btnsb" id="deleteall">
+
+        </div>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>ProName</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Discount</th>
+                <th>Total</th>
+                <th>Category</th>
+               <th> Update</th>
+               <th>Delete</th>
+
+
+
+            </tr>
+            <tbody id="tbody">
+                
+
+            </tbody>
+        </table>
+
+    
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    
+    <script src="project1.js"></script>
+</body>
+</html>
